@@ -164,7 +164,7 @@ def build_excel(df):
     return buf.getvalue()
 
 
-PARSERS = {"Krungthai Statement Extraction": parse_krungthai}
+PARSERS = {"Vertical Krungthai": parse_krungthai}
 
 with st.sidebar:
     st.title("🏦 Statement Tools")

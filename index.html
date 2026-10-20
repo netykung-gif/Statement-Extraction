@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Statement Tools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand">🏦 Statement Tools</div>
+  <nav id="menu"></nav>
+  <div class="foot">ประมวลผลในเบราว์เซอร์ ไฟล์ไม่ถูกอัปโหลดออกไป</div>
+</aside>
+<main>
+  <h1 id="title"></h1>
+  <label id="drop" class="drop">
+    <input id="file" type="file" accept="application/pdf" hidden>
+    <span>ลากไฟล์ PDF มาวาง หรือคลิกเพื่อเลือกไฟล์</span>
+  </label>
+  <p id="status" class="status"></p>
+  <section id="result" hidden>
+    <div class="cards" id="cards"></div>
+    <button id="dl" class="btn">Download Excel</button>
+    <div class="tablewrap"><table id="tbl"></table></div>
+    <p class="note" id="note"></p>
+  </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
